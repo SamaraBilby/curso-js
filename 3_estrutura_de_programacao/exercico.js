@@ -26,3 +26,10 @@ if(nome === "Samara") {
 } else {
     console.log(`Oi, ${nome} !!`)
 }
+
+// exercício 09
+
+function potencia (a, b) {
+    return Math.pow(a, b)
+}
+console.log(potencia(2, 6))
