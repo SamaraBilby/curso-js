@@ -86,7 +86,7 @@ for(let i = 0; i <= 50; i++){
 
 // exercio 15
 
-for(let i = 0; i <= 50; i++){
+for(let i = 1; i <= 50; i++){
     if (i % 2 == 0 && i != 1){
         console.log(`${i} não é primo`);
     } else if (i % i == 0 ) {
