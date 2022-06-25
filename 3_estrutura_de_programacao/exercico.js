@@ -73,3 +73,23 @@ while( n <= 10) {
 for(let i = 100; i >= 50; i = i - 5){
     console.log(i)
 }
+
+// exercicio 14
+
+for(let i = 0; i <= 50; i++){
+    if( i % 2 == 0) {
+        console.log(`O número ${i} é par`)
+    } else {
+        console.log(`O número ${i} é impar`)
+    }
+}
+
+// exercio 15
+
+for(let i = 0; i <= 50; i++){
+    if (i % 2 == 0 && i != 1){
+        console.log(`${i} não é primo`);
+    } else if (i % i == 0 ) {
+        console.log(`${i} é primo`);
+    }
+}
