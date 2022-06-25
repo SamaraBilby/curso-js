@@ -58,3 +58,12 @@ if (idade < 18 && idCnh === "não") {
 } else {
     console.log("Pode dirigir veículos automotores");
 }
+
+// exercio 12
+
+let n = 0;
+
+while( n <= 10) {
+    console.log ('o valo de n é :' + n);
+    n = n + 1;
+}
