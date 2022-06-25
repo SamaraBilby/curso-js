@@ -33,3 +33,15 @@ function potencia (a, b) {
     return Math.pow(a, b)
 }
 console.log(potencia(2, 6))
+
+// exercio 10 
+
+let velocidadeCarro = 100;
+
+if (velocidadeCarro > 80) {
+    console.log("Carro acima do limite de velocidade");
+} else if( velocidadeCarro === 80){
+    console.log("Carro no limite de velocidade")
+} else {
+    console.log("Carro abaixo do limite de velocidade")
+}
