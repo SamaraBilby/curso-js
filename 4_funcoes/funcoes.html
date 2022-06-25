@@ -21,5 +21,28 @@
         <li>Geralmente uma função retorna um valor;</li>
         <li>É possível declarar em variáveis</li>
     </ul>
+
+    <h2>Escopo de uma função</h2>
+    <li>O que acontece dentro de uma função fica separado do escopo global</li>
+    <li>O escopo global seria todo o arquivo de JavaScript</li>
+    <li> <br>
+        let n = 10; <br>
+        const numero = function() { <br> 
+            let n = 25; <br>
+            console.log(n); <br>
+        } <br>
+        console.log(n);
+    </li>
+    <br>
+    <li>Atualmente com let e const, qualquer bloco de código pode separar seu escopo (um if por exemplo);</li>
+    <li>Podemos ter escopos diferentes não só com funções</li>
+    <li>
+        let x = 10;
+        if(true){
+            let x = 20;
+            console.log(x); //escopo if
+        }
+        console.log(x) // escopo geral
+    </li>
 </body>
 </html>
