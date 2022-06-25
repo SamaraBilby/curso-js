@@ -41,7 +41,20 @@ let velocidadeCarro = 100;
 if (velocidadeCarro > 80) {
     console.log("Carro acima do limite de velocidade");
 } else if( velocidadeCarro === 80){
-    console.log("Carro no limite de velocidade")
+    console.log("Carro no limite de velocidade");
 } else {
-    console.log("Carro abaixo do limite de velocidade")
+    console.log("Carro abaixo do limite de velocidade");
+}
+
+// exercio 11
+
+let idedeCondutor = 33;
+let idCnh = "não";
+
+if (idade < 18 && idCnh === "não") {
+    console.log("Não pode dirigir veículos automotores");
+} else if (idade >= 18 && idCnh === "não") {
+    console.log("Não pode dirigir veículos automotores");
+} else {
+    console.log("Pode dirigir veículos automotores");
 }
