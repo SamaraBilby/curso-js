@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./condicionais.js"></script>
+    <title>Estruturas de Controle - JS</title>
+</head>
+<body>
+    <h2>O que são Estruturas de Controle</h2>
+    <ul>
+        <li>Um program é executado de cima para baixo</li>
+        <li>Com as estruturas podemos modelar o fluxo do programa</li>
+        <li>Ou seja, dependendo dos valores de statements, ele tomará um caminho diferente</li>
+        <img src="../image/fluxo_controle.jpg" alt="fluxograma de estrutura de Controle">
+    </ul>
+
+    <h2>Estrutura Condicional: if</h2>
+    <ul>
+        <li>O programa vai executar um bloco de código, SE algo acontecer</li>
+        <li>Onde algo é a condição imposta por um statement</li>
+        <li>que resulta em um boolean (treu or false)</li>
+        <li>let idade = 19 <br> if(idade > 18) { <br> console.log("Pode entrar") <br> }</li>
+    </ul>
+
+    <h2>Estrutura Condicional: else</h2>
+    <ul>
+        <li>Podemos executar um outro bloco de código, caso a instrução do if não seja atendida</li>
+        <li>Ou seja, Se não executar o bloco if, Execute o bloco else</li>
+        
+        <li>let nome = "Pedro" <br> if(nome == "João") { <br> console.log("Seu nome é João"); <br> } else { <br> console.log("Seu nome não é João"); <br> } </li>
+    </ul>
+
+    <h2>Estrutura Condicional: else if</h2>
+    <ul>
+        <li>Ainda podemos encadear mais condições com else if</li>
+        <li>Ou seja, antes de executar um else ou até mesmo sem ele podemos verificar mais condições</li>
+        
+        <li>let a = 5; <br> let b = 3 <br> if(a + b == 3) { <br> console.log("O resultado é 3"); <br> } else if (a == 4){ <br> console.log("O valor de a é 4"); <br> } else if (b == 3) { <br>console.log("O valor de b é 3");<br>} else{ <br> console.log("Nenhuma das condições acima") } </li>
+    </ul>
+
+    <h2>Estrutura Condicional: switch</h2>
+    <ul>
+        <li>Quando há necessidade de vários ifs, podemos utilizar p switch/case</li>
+        <li>Para sair de um case podemos utilizar o break</li>
+        <li>Podemos inserir uma expressão default, para caso nenhum valor for correspondido</li>
+    </ul>
+
+    <h2>O que são estruturas de repetição</h2>
+    <ul>
+            <li>A ideia é repetir uma ação até atingir uma condição</li>
+            <li>Ao invês de repetirmos o mesmo código várias vezes criamos um statement que fará uma checagem em cada loop</li>
+         </ul>
+        <h2>Estrutura de repetição:While</h2>
+        <ul>
+            <li>Fará uma ação até que a condição seja atingida</li>
+            <li>Precisamos realmente 'definir um fim' para o loop, para não termos o problema de loop infinito</li>
+            <li>
+                let x = 10; <br>
+                while(x > 0){ <br>
+                    console.log(x); <br>
+                    x = x - 1; <br>
+                }
+            </li>
+        </ul>
+        <h2>Estrutura de repetição:do while</h2>
+        <ul>
+            <li>Semelhante ao while, porém a estrutura muda um pouco</li>
+            <li>
+                let y = 0; <br>
+                do { <br>
+                    console.log(y); <br>
+                    y = y + 1 <br>
+                } while(y < 5) <br>   
+            </li>    
+        </ul>
+        <h2>Estrutura de repetição:for</h2>
+        <ul>
+            <li>Semelhante ao while, porém amplamente utilizado</li>
+            <li>
+                for(let numero = 2; numero < 100; numero = numero *2){ <br>
+                    console.log("O número é: " + numero); <br>
+                }   
+            </li>    
+        </ul>
+
+</body>
+</html>

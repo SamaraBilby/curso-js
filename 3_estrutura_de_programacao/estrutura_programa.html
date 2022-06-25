@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Programa - JS</title>
+    <script src="./1_variáveis.js"></script>
+    <script src="./funcoes_builtin.js"></script>
+</head>
+<body>
+    
+    <h2>O que é um Programa/Software?</h2>
+    <ul>
+        <li>É um conjunto de declarações(statements)</li>
+        <li>Statements são conjuntos de expressões (expressions)</li>
+        <li>Expression é todo fragmento de código que produz um valor</li>
+        <li>Software tem um 'objetivo'</li>
+        <li>Statements 'guiam' o Software para seu objetivo</li>
+        <li>Expressions são valores que os statements esperam para guiar o Software</li>
+        <li>Statements: console.log(1 > 2)</li>
+        <li>Expression: console.log('batata') </li>
+    </ul>
+    
+    <h2>Como salvar valores na memória</h2>
+    <ul>
+        <li>Salvamos valores em variáveis (isso é statements)</li>
+        <li>let laranjas = 5;</li>
+        <li>E depois podemos criar expressões com valores salvos</li>
+        <li>console.log(laranjas * laranjas)</li>
+        <li>console.log(`Tem ${laranjas} na sexta`)</li>
+        <li>Podemos mudar o valor que foi salvo anteriormente</li>
+        <li>laranjas = laranjas + 1</li>
+        <li>Um let pode definir várias variáveis também</li>
+        <li>let quadrado = 4, triangulo = 3, retangulo = 4</li>
+        <li>console.log(quadrado * (triangulo + retangulo))</li>
+    </ul>
+    
+    <h2>Outras maneiras de salvar valor</h2>
+    <ul>
+        <li>const, let e var</li>
+        <li>const - não pode ser alterado</li>
+        <li>var - não é mais utilizado</li>
+        <li>let - pode ser alterado</li>
+    </ul>
+    
+    <h2>Convenção no nome das variáveis</h2>
+    <ul>
+        <li>Não pode começar o nome com um número ex: let 2teste</li>
+        <li>Mas pode terminar com número (let teste2)</li>
+        <li>Pode ter $ ou _ mas não outros caracteres especiais (let $nome, _nome)</li>
+        <li>Mas não pode ter pontuação ou outros especiais(let @teste)</li>
+        <li>Podemos iniciar com letra maiúscula (let Nome = "Samara")</li>
+        <li>Ou usar camelCase (let meuPrimeiroNome = "Samara")</li>
+    </ul>
+    
+    <h2>Nomes de variáveis reservados</h2>
+    <ul>
+        <li>Alguns nomes não podem ser utilizados para iniciar variáveis:</li>
+        <li>Ex: break, true, false, const, public etc</li>
+        <li>errado let break => certo let breakNome </li>
+    </ul>
+
+    <h2>Como funciona o ambiente JavaScript</h2>
+    <ul>
+        <li>O ambiente não inicia vazio, ele contém <b>funções</b> nativas da linguagem</li>
+        <li><b>Funções</b>são blocos de código, que nos retornam um valor ou ação</li>
+        <li>O ambiente do JS, pode ser entendido como o navegador</li>
+    </ul>
+
+    <h2>A estrutura de uma função</h2>
+    <ul>
+        <li>As funções são chamadas durante o programa</li>
+        <li>Você também pode ouvir: executar, chamar, invocar uma função</li>
+        <li>E nós chamamos a função utilizando o nome dela + abrindo e fechando parênteses</li>
+        <li>Ex: nomeDaFunção();</li>
+        <li>Também podemos inserir parâmetros, em algumas funções são obrigatórios</li>
+        <li>Basicamente são valores que podem mudar o resultado da função</li>
+        <li>nomeDaFunção(parametro1, parametro2)</li>
+    </ul>
+
+    <h2>Função built-in: prompt()</h2>
+    <ul>
+        <li>Recebe um input do usuário do sistema e pode guardar este valor;</li>
+        <li>Ex: let idade = prompt("Qual sua idade?");<br> console.log(idade)</li>
+    </ul>
+    <h2>Função built-in: alert()</h2>
+    <ul>
+        <li>Exibe uma mensagem na tela do usuário</li>
+        <li>Ex: alert("Veja essa mensagem");<br> Esta função é pouco utilizada</li>
+    </ul>
+    <h2>Função built-in: Math.x()</h2>
+    <ul>
+        <li>Função utilizada para expressões/cálculos matemáticos</li>
+        <li>Ex: let maiorNumero = Math.max(1,5,2,3);<br> console.log(maiorNumero) <br> Esta função é muito utilizada</li>
+    </ul>
+    <h2>Função built-in: console.log()</h2>
+    <ul>
+        <li>Exibe uma mensagem na tela, que é o argumento que passamos</li>
+        <li>Ex: console.log("Exibir esta mensagem") <br> Esta função é muito utilizada</li>
+    </ul>
+</body>
+</html>
