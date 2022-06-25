@@ -67,3 +67,9 @@ while( n <= 10) {
     console.log ('o valo de n é :' + n);
     n = n + 1;
 }
+
+// exercico 13
+
+for(let i = 100; i >= 50; i = i - 5){
+    console.log(i)
+}
