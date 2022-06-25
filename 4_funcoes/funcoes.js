@@ -50,3 +50,10 @@ const multiplicar = function(n){
 }
 
 multiplicar(5)
+
+//Arrow Functions
+
+const parOuImpar = (n) => {
+    return n % 2;
+}
+console.log(parOuImpar(3))
