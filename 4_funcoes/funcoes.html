@@ -64,8 +64,80 @@
         <li>Se a expressão for pequena, pode ser feita em uma linha sem prejudicar a leitura do código</li>
         <br>
         <li>
+            const raizQuadrada = (x) => { <br>
+                return x * x <br>
+            } <br>
+            const raizQuadrada2 = n => n * n; <br>
+
+            console.log(raizQuadrada(2)); <br>
+            console.log(raizQuadrada2(2)); <br>
+
+        </li>
+    </ul>
+
+    <br>
+function nomeComIdade(nome, idade) {
+                if(idade === undefined) {
+                    console.log("Seu nome é " + nome);
+                } else {
+                    console.log("Seu nome é " + nome + "e você " + idade + " anos")
+                }
+            }
+            nomeComIdade("João")
+            nomeComIdade("João", 42)
+    <h2>Argumentos Opcionais</h2>
+    <ul>
+        <li>Podemos chamar uma função em JS sem o número igual de parâmetros determinados;</li>
+        <li>
             
         </li>
     </ul>
+
+    <h2>Argumentos com valor default</h2>
+    <ul>
+        <li>Podemos pre-determinar um valor para um argumento;</li>
+        <li>
+            function repetirFrase(frase, n = 2) { <br>
+                for (let i = 1; x < = n; x++){ <br>
+                    console.log(frase + " " + x) <br>
+                } <br>
+            } <br>
+
+            repetirFrase("Testando", 5);
+            repetirFrase("Só duas vezes");
+        </li>
+    </ul>
+    <h2>Closure</h2>
+    <ul>
+        <li>Uma função que se lembra do ambiente que ela foi criada;</li>
+        <li>
+            function armazenarSoma(x) {
+                return y => x + y;
+
+                let soma1 = armazenarSoma(3);
+                console.log(soma1(5));
+                let soma2 = armazenarSoma(5);
+                console.log(soma2(10))
+             }
+        </li>
+    </ul>
+    <h2>Recursion</h2>
+    <ul>
+        <li>Permite que uma função de se chamar novamente;</li>
+        <li>Isso pode ser um problema caso a fnção se chame muitas vezes;</li>
+        
+        <li>
+            function retornarNumeroPar(n){ <br>
+                if(n % 2 == 0) { <br>
+                    console.log("n agora é para: " + n); <br>
+                } else { <br>
+                    console.log(n); <br>
+                    retornarNumeroPar(n - 1); <br>
+                }
+            }
+        </li>
+        
+    </ul>
+
 </body>
 </html>
