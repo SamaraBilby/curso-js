@@ -33,23 +33,63 @@
     <ul>
         <li>Métodos são propriedades que funcionam como funções</li>
         <li>Strings e array contém métodos</li>
+        <li> <br>
+        let marca = "Nike"; <br>
 
-        let marca = "Nike";
-
-        console.log(typeof marca.toUpperCase);
-        console.log(marca.toUpperCase());
+        console.log(typeof marca.toUpperCase); <br>
+        console.log(marca.toUpperCase()); <br>
+    </li>
     </ul>
 
     <h2>Objetos</h2>
     <li>Uma coleção de propriedades, parecidos com arrays</li>
     <li>Podemos acessar estas propriedades</li>
-    <li>
-        let pessoa = {
-            nome: "Samara",
-            profissao: "Desenvolvedora Front End",
-            idade: 33,
-        }   
+    <li> <br>
+        let pessoa = { <br>
+            nome: "Samara", <br>
+            profissao: "Desenvolvedora Front End", <br>
+            idade: 33, <br>
+        } <br>   
     </li>
+
+    <h2>Objetos: deletando e criando propriedades</h2>
+
+    <ul>
+        <li>Podemos adicionar e deletar propriedades ao longo do nosso programa;</li>
+        <li>
+            let carro = {
+                marca: "VW",
+                portas: 4,
+                eletrico: false,
+                motor: 1.0
+            }
+            console.log(carro.portas);
+            delete carro.portas;
+            console.log(carro.portas);
+            carro.tetoSolar = true;
+            console.log(carro.tetoSolar);
+
+        </li>
+
+    </ul>
+
+    <h2>Objetos: mais sobre objetos</h2>
+    <ul>
+        <li>Podemos copiar todas as propriedades de um objeto para outro;</li>
+        <li>
+            let objetoA = {
+                prop1: 'teste',
+                prop2: 'testando',
+            }
+            let objetoB = {
+                prop3: 'propriedade'
+            }
+
+            Object.assign(objetoA, objetoB)
+            console.log(objetoA);
+        </li>
+    </ul>
+
 </body>
 
 </html>

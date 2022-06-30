@@ -17,7 +17,40 @@ let pessoa = {
             nome: "Samara",
             profissao: "Desenvolvedora Front End",
             idade: 33,
+            softSkill: function(){
+                console.log('proatividade, dinâmica, comunicativa, focado')
+            }    
         }
 
 console.log(pessoa.nome);
-console.log(idade);
+console.log(pessoa.idade);
+pessoa.softSkill();
+
+let carro = {
+        marca: "VW",
+        portas: 4,
+        eletrico: false,
+        motor: 1.0
+    }
+    console.log(carro.portas);
+
+    delete carro.portas;
+    
+    console.log(carro.portas);
+    
+    carro.tetoSolar = true;
+    
+    console.log(carro.tetoSolar);
+
+    console.log(carro);
+
+    let objetoA = {
+        prop1: 'teste',
+        prop2: 'testando',
+    }
+    let objetoB = {
+        prop3: 'propriedade'
+    }
+
+    Object.assign(objetoA, objetoB)
+    console.log(objetoA);
