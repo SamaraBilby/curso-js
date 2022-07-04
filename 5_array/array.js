@@ -54,3 +54,12 @@ let carro = {
 
     Object.assign(objetoA, objetoB)
     console.log(objetoA);
+    
+    // Verificando a chave de objeto
+
+   /* let objetoA = {
+        prop1: 'teste',
+        prop2: 'testando',
+    }*/
+
+    console.log(Object.keys(objetoA))
