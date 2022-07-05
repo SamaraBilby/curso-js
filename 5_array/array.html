@@ -57,17 +57,17 @@
     <ul>
         <li>Podemos adicionar e deletar propriedades ao longo do nosso programa;</li>
         <li>
-            let carro = {
-                marca: "VW",
-                portas: 4,
-                eletrico: false,
-                motor: 1.0
-            }
-            console.log(carro.portas);
-            delete carro.portas;
-            console.log(carro.portas);
-            carro.tetoSolar = true;
-            console.log(carro.tetoSolar);
+            let carro = { <br>
+                marca: "VW", <br>
+                portas: 4, <br>
+                eletrico: false, <br>
+                motor: 1.0 <br>
+            } <br>
+            console.log(carro.portas); <br>
+            delete carro.portas; <br>
+            console.log(carro.portas); <br>
+            carro.tetoSolar = true; <br>
+            console.log(carro.tetoSolar); <br>
 
         </li>
 
@@ -102,6 +102,33 @@
             console.log(Object.Keys(objetoA)) <br>
         </li>
     </ul>
+
+    <h2>Mutação (Mutability)</h2>
+    <ul>
+        <li>Um objeto pode herdar todas as características do outro, virando uma referência ao mesmo</li>
+        <li>
+            let objetoC = { <br>
+                pontos:10 <br>
+             } <br>
+            
+             let objetoD = objetoC <br>
+            
+             let objetoE = { <br>
+                pontos: 10 <br>
+             }  <br>
+            
+             console.log(objetoC == objetoD); <br>
+             console.log(objetoC == objetoE); <br>
+        </li>
+
+    </ul>
+
+    <h2>Loops em Arrays</h2>
+
+    <ul>
+        <li>Lista para interar em cada elemneto no Array</li>
+    </ul>
+
 
 </body>
 

@@ -63,3 +63,26 @@ let carro = {
     }*/
 
     console.log(Object.keys(objetoA))
+
+  // Mutação (mutability)
+  
+ let objetoC = {
+    pontos:10
+ }
+
+ let objetoD = objetoC
+
+ let objetoE = {
+    pontos: 10
+ } 
+
+ console.log(objetoC == objetoD);
+ console.log(objetoC == objetoE);
+
+ // Loop em Arrays
+
+ let numbers = [1, 5, 10, 15, 20, 25];
+
+ for(let i = 0; i <= numbers.length; i++){
+    console.log(numbers[i]);
+ }
