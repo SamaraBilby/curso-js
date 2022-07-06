@@ -153,3 +153,33 @@ let frase = "O rato roeu a roupa do rei de roma"
 let palavras = frase.split(" ");
 
 console.log(palavras)
+
+let fraseMontada = palavras.join('<->');
+console.log(fraseMontada);
+
+//Métodos de string: repeat
+
+console.log('teste '.repeat(5))
+
+// REST OPERATOR
+
+function imprimirNumeros(...args){
+    for (let i = 0; i < args.length; i++){
+        console.log(args[i]);
+    }
+}
+
+imprimirNumeros(9, 25, 18, 125, 588, 98);
+
+
+// Destructuring com objetos
+
+const person ={
+    nome: "Zoe",
+    lastName: "Bilby"
+}
+
+const {nome: Scooby, lastName: Doo} = person
+
+console.log(Scooby);
+console.log(Doo)
