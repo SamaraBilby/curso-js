@@ -183,3 +183,13 @@ const {nome: Scooby, lastName: Doo} = person
 
 console.log(Scooby);
 console.log(Doo)
+
+// Destructuring com Array
+
+let nome = ['Zoe', 'Scooby', 'Poly']
+
+let [nomeA, nomeB, nomeC] = nome;
+
+console.log(nomeA);
+console.log(nomeB);
+console.log(nomeC);
