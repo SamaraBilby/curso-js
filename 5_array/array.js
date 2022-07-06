@@ -86,3 +86,70 @@ let carro = {
  for(let i = 0; i <= numbers.length; i++){
     console.log(numbers[i]);
  }
+
+ // métodos de array: push e pop
+
+ let pessoas = ['Samara', 'Lindsay', 'Zoe'];
+ let pessoasRemovidas = pessoas.pop();
+
+ console.log(pessoas)
+ console.log(pessoasRemovidas);
+
+ pessoas.push("Polyana")
+ console.log(pessoas);
+
+ // métodos de array: shift e unshift
+
+ let frutas = ['maça', 'melão', 'uva'];
+ let frutaRemovida = frutas.shift();
+ console.log(frutas);
+ console.log(frutaRemovida);
+
+ let frutaAdicionada = frutas.unshift("melancia");
+ console.log(frutas);
+
+ //Métodos de array: indexOf e lastIndexOf
+
+ let arrayNum = [0, 1, 2, 1, 0, 5, 6];
+
+ console.log(arrayNum.indexOf(1));
+ console.log(arrayNum.lastIndexOf(1));
+
+ //Métodos de array: slice
+
+   console.log(arrayNum.slice(2, 3))
+   console.log(arrayNum.slice(3))
+
+   //Métodos de array: forEach
+
+   arrayNum.forEach(num => {
+    console.log(num);
+   });
+
+   let car = ['BMW', 'Fiat', 'Audi'];
+   console.log(car.includes('Fiat'));
+   console.log(car.includes('Renault'));
+
+   //Métodos de array: reverse
+
+   console.log(arrayNum.reverse());
+
+   // Métodos de string: trim
+
+   let texto = ' \n  teste  \n';
+
+   console.log(texto.trim());
+
+
+// Métodos de string: padStart 
+
+let milAoContrario = '1';
+
+console.log(milAoContrario.padStart(4, '0'));
+
+// Métodos de string: split
+
+let frase = "O rato roeu a roupa do rei de roma"
+let palavras = frase.split(" ");
+
+console.log(palavras)
