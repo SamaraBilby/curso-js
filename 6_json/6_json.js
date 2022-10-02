@@ -1,4 +1,4 @@
-let pessoa {
+let pessoa = {
    "nome": "Samara",
    "age": 33,
    "position": "Developer",
@@ -7,7 +7,7 @@ let pessoa {
 
 console.log(pessoa.nome)
 
-let car {
+let car = {
     "brand": "BMW",
     "wheels": 4,
     "doors": 2,

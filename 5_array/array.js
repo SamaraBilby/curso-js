@@ -193,3 +193,100 @@ let [nomeA, nomeB, nomeC] = nome;
 console.log(nomeA);
 console.log(nomeB);
 console.log(nomeC);
+
+// Exercícios
+
+// Exercício 01
+/* Criar um aray com 5 itens, acessar o item 1, 3 e 4 */
+
+let arrayEx_01 = ["cat", "dog", "bird", "fish", "horse"];
+console.log(arrayEx_01[0], arrayEx_01[2], arrayEx_01[3]);
+
+//Exercício 02
+
+/* Crie um array com 2 elemesntos e outro com 4. Imprima o números de elementos de
+cada um na tela */
+
+let arrayEl_01Ex_02 = [3, 5]
+let arrayEl_02Ex_02 = [1, 2, 4, 6]
+
+console.log(arrayEl_01Ex_02.length);
+console.log(arrayEl_02Ex_02.length);
+
+
+// Exercício 03
+
+/* Criar um objeto onibus
+Com as propriedades roda = 8;
+limite de passageiro = 40;
+portas = 2
+
+imprima todas as propriedades no console;
+*/
+
+let onibus_03 = {
+    rodas: 8,
+    max_passageiro: 40,
+    portas: 2
+}
+
+console.log(onibus_03.rodas);
+console.log(onibus_03.max_passageiro);
+console.log(onibus_03.portas);
+
+// Exercício 04
+
+/* Adicione a propriedade janelas no objeto onibus, com o valor 20
+Delete a propriedade rodas
+Imprima a propriedade janelas no console
+*/
+
+onibus_03.janelas=20;
+
+console.log(onibus_03)
+
+delete onibus_03.rodas;
+
+console.log(onibus_03);
+console.log(onibus_03.janelas);
+
+// Exercício 05
+
+/* Crie um array com 5 nomes, 
+incluindo o seu
+Verifique se o seu nome existe no array
+Se existir imprima alguma mensagem no console
+*/
+
+let names_Ex05 = ["Andrio", "Lulu", "Samara", "Lindsay", "Terezinha"];
+
+if(names_Ex05.includes("Samara")){
+    console.log(names_Ex05[names_Ex05.indexOf("Samara")]);
+}
+
+// Exercício 06
+
+/* Crie dois arrays, um com mais de 5 elementos e outro com menos
+Faça uma função que verifica o número de elementos
+Se possuir menos que 5, imprima "Poucos elementos"
+Se tiver mais, imprima "Muitos elementos"
+*/
+
+let array1_EX06 = ["cama", "guarda-roupa", "roupas"];
+let array2_EX06 = ["geladeira", "fogão", "panela", "cafeteria", "xícaras", "frutas", "bolo"];
+
+function quantidadeElementosArr(array){
+    if(array.length < 5){
+        console.log("Poucos elementos");
+    }
+    else{
+        console.log("Muitos Elementos");
+    }
+}
+
+quantidadeElementosArr(array1_EX06);
+quantidadeElementosArr(array2_EX06);
+
+
+
+
