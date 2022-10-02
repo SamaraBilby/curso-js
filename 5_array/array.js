@@ -297,3 +297,46 @@ Faça uma interação entre todos eles e imprima o valor
 for(let i = 0; i < array2_EX06.length; i++){
     console.log(array2_EX06[i]);
 };
+
+// Exercício 09
+
+/* Crie um array a partir de uma frase
+    Imprima cada palavra do array no console por meio de um for
+*/
+
+let frase_EX09 ="Constância Constrói Caráter";
+
+let array_frase = frase_EX09.split(" ");
+
+for(let i = 0; i < array_frase.length; i++){
+    console.log(array_frase[i]);
+};
+
+// Exercíco 10
+
+/* Calculadora */
+
+const calculadora ={
+    soma: function(a, b){
+        return a + b;
+    },
+
+    subtracao: function(a, b){
+        return a - b;
+    },
+
+    multiplicacao: function(a, b){
+        return a * b;
+    },
+
+    divisao: function(a, b){
+        return a / b;
+    }
+
+}
+
+console.log(calculadora.soma(12,2));
+console.log(calculadora.subtracao(12,2));
+console.log(calculadora.multiplicacao(12,2));
+console.log(calculadora.divisao(12,2));
+

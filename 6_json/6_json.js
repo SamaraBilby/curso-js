@@ -20,4 +20,16 @@ console.log(jsonToString);
 
 let stringToJson = JSON.parse(jsonToString);
 
-console.log(stringToJson)
+console.log(stringToJson);
+
+
+let aluno = {
+    "nome": "Lindsay",
+    "serie": "4 ano",
+    "idade": "9 anos",
+}
+
+console.log(aluno.nome);
+console.log(aluno.serie);
+console.log(aluno.idade);
+console.log(aluno);
