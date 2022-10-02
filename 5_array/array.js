@@ -287,6 +287,13 @@ function quantidadeElementosArr(array){
 quantidadeElementosArr(array1_EX06);
 quantidadeElementosArr(array2_EX06);
 
+// Exercício 07 
+
+/* Crie um array com 5 elementos 
+Faça uma interação entre todos eles e imprima o valor
+*/
 
 
-
+for(let i = 0; i < array2_EX06.length; i++){
+    console.log(array2_EX06[i]);
+};
