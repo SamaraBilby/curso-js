@@ -19,6 +19,7 @@ const calculos = {
         return a / b;
     },
 
+    //this
     setMedia: function(media){
         this.media = media;
     },
@@ -34,9 +35,59 @@ console.log(calculos.subtracao(24,3));
 console.log(calculos.multiplicacao(24,3));
 console.log(calculos.divisao(24,3));
 
-calculos.setMedia(1,10,7);
 
-console.log(calculos.media)
-
+//this
 calculos.getMedia(3, 5, 7);
-console.log(calculos.media)
+console.log(calculos.media);
+
+// Prototype
+
+let pessoa ={
+    maos: 2
+}
+
+console.log(Object.getPrototypeOf(pessoa));
+console.log(Object.getPrototypeOf(pessoa) === Object.prototype);
+console.log(pessoa.hasOwnProperty("maos"));
+
+let pessoaNova = Object.create(pessoa);
+console.log(pessoaNova.maos);
+console.log(Object.getPrototypeOf(pessoaNova) == pessoa);
+console.log(pessoaNova.hasOwnProperty("maos"));
+
+// Classes
+
+let cachorro = {
+    patas: 4,
+    raca: "SRD",
+    latir: function() {
+        console.log("Au Au")
+    }
+}
+
+let salcicha = Object.create(cachorro);
+salcicha.latir();
+salcicha.raca = "Salcicha";
+
+console.log(salcicha.raca);
+console.log(cachorro.raca);
+
+// Class Construtor por meio de função
+
+function criarCachorro(raca){
+    let cachorro = Object.create({});
+    cachorro.raca = raca;
+    return cachorro;
+}
+
+let doberman = criarCachorro("Doberman");
+console.log(doberman.raca);
+
+//Classes: Construtor por new
+
+function Cachorro(raca){
+    this.raca = raca;
+}
+
+let husky = new Cachorro("Husky");
+console.log(husky.raca)
