@@ -91,3 +91,36 @@ function Cachorro(raca){
 
 let husky = new Cachorro("Husky");
 console.log(husky.raca)
+
+// Class Construtor com método atrelado ao prototype
+
+
+Cachorro.prototype.uivar = function (){
+    console.log("Auuuuuuuuuuuu")
+}
+
+husky.uivar();
+
+
+// Class Construtor(ES6)
+
+class Dog {
+    constructor(raca, cor){
+    this.raca = raca;
+    this.cor =cor;
+    }
+
+    latir(){
+        console.log("Au Au Au Au")
+    }
+}
+
+let labrador = new Dog("Labrador", "'Amarelo");
+
+console.log(labrador)
+
+//Mais sobre Classes
+
+Dog.prototype.patas = 4;
+console.log(labrador.patas)
+labrador.latir();
