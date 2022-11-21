@@ -92,6 +92,8 @@ function Cachorro(raca){
 let husky = new Cachorro("Husky");
 console.log(husky.raca);
 
+console.log(husky.raca);
+
 // métodos no prototype
 
 Cachorro.prototype.uivar= function() {
