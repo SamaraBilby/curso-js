@@ -83,11 +83,101 @@ function criarCachorro(raca){
 let doberman = criarCachorro("Doberman");
 console.log(doberman.raca);
 
-//Classes: Construtor por new
+//Classes: Construtor por new - método mais utilizado
 
 function Cachorro(raca){
     this.raca = raca;
 }
 
 let husky = new Cachorro("Husky");
-console.log(husky.raca)
+console.log(husky.raca);
+
+// métodos no prototype
+
+Cachorro.prototype.uivar= function() {
+    console.log("AAAuuuUUU");
+}
+
+husky.uivar();
+
+// Construtor na classe (ES6)
+
+class Dog {
+    constructor(raca, patas, cor) {
+        this.raca =raca;
+        this.cor = cor;
+    }
+
+    latir(){
+        console.log("Au Au")
+    }
+}
+
+// mais sobre classes
+// Não podemos adicionas propriedades na classe, só via prototype
+// a classe só aceita métodos;
+
+Dog.prototype.patas = 4;//Override
+
+
+let salcicha2 = new Dog("Salcicha", 4, "Marrom");
+    console.log(salcicha2);
+    console.log(salcicha2.patas)
+    console.log(Dog)
+
+    salcicha2.latir()
+
+//Override(substituir) nas propriedades do prototype
+    Dog.prototype.raca = "SRD";
+//Sempre que adicionamos uma propriedade a um objeto, é criada uma idêntica no prototype
+//podemos substituir a do prototype depois que a classe é instanciada
+
+
+// Symbols
+
+/* 
+1. Propriedades únicas que , nãoo podem ser alteradas e nem criadas duas vezes 
+2. Podemos utilizar como uma constante, só que para propriedade de objeto
+*/
+
+class Welpe {
+    constructor(raca) {
+        this.raca = raca;
+    }
+}
+
+let patas = Symbol();
+Welpe.prototype[patas] = 4;
+
+let golden = new Welpe("Golden Retriever")
+
+console.log(Welpe.prototype[patas]);
+console.log(golden[patas]);
+
+// Getters e Setters
+
+/*
+
+1. Get: serve para resgatar o valor de uma propriedade;
+2. Set: serve para alterar o valor de uma propriedade;
+
+*/
+
+class Animal{
+    constructor(raca) {
+        this.raca = raca;
+    }
+
+    get varRaca(){
+        return "A raça é " + this.raca;
+    }
+
+    set novaRaca(value){
+        this.raca = value;
+    }
+}
+
+let kingKong =  new Animal("King Kong")
+console.log(kingKong.varRaca);
+kingKong.novaRaca = "Girafa";
+console.log(kingKong.varRaca)
