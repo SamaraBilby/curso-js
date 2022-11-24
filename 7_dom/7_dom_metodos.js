@@ -183,3 +183,27 @@ let kingKong =  new Animal("King Kong")
 console.log(kingKong.varRaca);
 kingKong.novaRaca = "Girafa";
 console.log(kingKong.varRaca)
+
+//Herança(inheritance)
+
+/* 
+1. Uma classe pode herdar propriedades de outra class por herança 
+2.Por isso utilizamos extends;
+*/
+
+
+class Mamifero{
+    constructor(color){
+        this.color = color;
+    }
+}
+
+class Dog_2 extends Mamifero{
+    constructor(color, especie){
+        super(color, color);
+        this.especie = especie;
+    }
+}
+
+let pug = new Dog_2("Marrom", "Pug")
+console.log(pug);
