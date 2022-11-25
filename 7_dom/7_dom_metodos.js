@@ -20,6 +20,7 @@ const calculos = {
     },
 
     //this
+    
     setMedia: function(media){
         this.media = media;
     },
@@ -207,3 +208,9 @@ class Dog_2 extends Mamifero{
 
 let pug = new Dog_2("Marrom", "Pug")
 console.log(pug);
+
+// instanceof operator
+
+// podemos verificar quem é o pai do objeto utilizando o instanceof
+
+console.log(new Dog_2 instanceof Mamifero)
