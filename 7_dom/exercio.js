@@ -105,3 +105,40 @@ console.log(carrinho);
 
 
 //exercicio 38
+
+class Endereco{
+    constructor(rua, bairro, cidade, estado){
+        this.rua = rua;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+    }
+
+    set novaRua(novaRua){
+        this.rua = novaRua;
+    }
+
+    set novaBairro(novaBairro){
+        this.bairro = novaBairro;
+    }
+
+    set novaCidade(novaCidade){
+        this.cidade = novaCidade;
+    }
+
+    set novaEstado(novaEstado){
+        this.estado = novaEstado;
+    }
+
+
+}
+
+let endereco = new Endereco("Rua Santa Monica", "Novo Mundo", "Curitiba", "PR");
+
+console.log(endereco);
+
+endereco.novaRua = "Rua dos Anjos";
+endereco.novaBairro = "Compensa";
+endereco.novaCidade = "Manaus";
+endereco.novaEstado = "AM"
+console.log(endereco);
