@@ -142,3 +142,37 @@ endereco.novaBairro = "Compensa";
 endereco.novaCidade = "Manaus";
 endereco.novaEstado = "AM"
 console.log(endereco);
+
+
+// Exercício 39 
+
+class Carro{
+    constructor(marca, cor, gasolinaRestante, consumo){
+        this.marca = marca;
+        this.cor = cor;
+        this.gasolinaRestante = gasolinaRestante;
+        this.consumo = consumo;
+    }
+     dirigir(km){
+        let litrosConsumidos = km / this.consumo;
+
+        this.gasolinaRestante -= litrosConsumidos;
+
+     }
+
+     abastecer(litros){
+      this.gasolinaRestante += litros;
+     }
+}
+
+let carro = new Carro("Renout","Kwid",100, 14)
+
+    console.log(carro)
+
+    carro.dirigir(15);
+
+    console.log(carro);
+
+    carro.abastecer(100);
+
+    console.log(carro);
