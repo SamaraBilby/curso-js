@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="./9_regex.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Criando uma Expressão Regular no JavaScript</h2>
+
+    <ul>
+        <li>As expressões regulares no JS são um tipo de objeto</li>
+        <li>Podemos instancia-lo de duas formas</li>
+        <li>New RegExp e /.../</li>
+
+        <p> let reg1 = new RegExp("test")</p>
+        <p>let reg2 = /teste/;</p>
+    </ul>
+
+    <h2>Verificando padrões com regex</h2>
+
+    <ul>
+        <li>prieiro se define o padrão por meio da regex</li>
+        <li>segundo utiliza-se o método test() para verificar se o padrão é retornado</li>
+        <li>Com isso vamos reeber de resposta true or false</li>
+    </ul>
+
+    <h2>Conjunto de caracteres</h2>
+
+    <ul>
+        <li>Podemos definir um conjunto de caracteres para encontrar por regex</li>
+        <li>Basta por entre[]</li>
+        <li>Com um traço podemos definir um intervalo também</li>
+    </ul>
+
+    <h2>Caracteres Especiais</h2>
+
+    <ul>
+    
+        <li>
+            <strong>\d </strong> 
+            Qualquer dígito de caractere
+        </li>
+        
+        <li>
+            <strong>\w </strong> 
+            Um caractere alfanumérico("teste")
+        </li>
+        
+        <li>
+            <strong>\s </strong> 
+            Qualquer caractere de espaço em branco
+        </li>
+        
+        <li>
+            <strong>\D </strong> 
+            Caracteres que não são dígitos
+        </li>
+        
+        <li>
+            <strong>\W </strong> 
+            Caracteres não-alfanuméricos
+        </li>
+        
+        <li>
+            <strong>\S </strong> 
+            Caractere que não seja espaço em branco
+        </li>
+        
+        <li>
+            <strong>. </strong> 
+            Qualquer caractere, menos nova linha
+        </li>
+    
+    </ul>
+
+</body>
+
+</html>
