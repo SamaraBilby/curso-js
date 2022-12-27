@@ -75,15 +75,36 @@ console.log(reg10.test(" "));//true
 console.log(reg10.test("1alla2aksjkdksj3aljska4"));//false
 
 
-let palavrasSemAeB =/[ˆ123]/;
+let numSem123 =/[ˆ123]/;
 
-console.log(palavrasSemAeB.test("1112")); //true
-console.log(palavrasSemAeB.test("14")); //true
-console.log(palavrasSemAeB.test("1")); //true
-console.log(palavrasSemAeB.test("ab")); //false
-console.log(palavrasSemAeB.test("ajhsjahjhdj")); //false
+console.log(numSem123.test("123")); //true
+console.log(numSem123.test("14")); //true
+console.log(numSem123.test("1")); //true
+console.log(numSem123.test("ab")); //false
+console.log(numSem123.test("ajhsjahjhdj")); //false
 
 
+
+// método Exec
+let textExec = /\d+/.exec("O número 100");
+
+console.log(textExec);
+console.log(textExec.index);
+
+let testExec_2 = /\d+/;
+
+console.log(testExec_2.exec("Tem número aqui"))
+
+// Método match
+console.log(("Tem número aqui").match(testExec_2))
+console.log(("O número 100").match(testExec_2))
+
+let testMatch = "O número é 100".match(/\d+/);
+console.log(testMatch)
+
+
+
+// Choice pattern
 
 function dataInput(){
 
@@ -101,6 +122,7 @@ function dataInput(){
 }
 
 dataInput();
+
 
 
 
