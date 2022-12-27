@@ -106,6 +106,30 @@ console.log(testMatch)
 
 // Choice pattern
 
+let joias = /\d+ (brincos|anéis|pulseiras|colar)/;
+
+console.log(joias.exec("5 brincos"));
+console.log(joias.test("5 brincos"));
+console.log(joias.test("5 bolacha"));
+
+
+// validando um domínio
+
+let validaDominio = /www.\w+\.com|com.br/;
+
+console.log(validaDominio.test("www.google.com"))
+console.log(validaDominio.test("www.google.com.br"))
+console.log(validaDominio.test("teste.com.br"))
+console.log(validaDominio.test("www.google"))
+
+// validando e-mail
+
+let validarEmail = /\w+@\w+\.\w+/;
+
+console.log(validarEmail.test("teste@email.com"));
+console.log(validarEmail.test("@email.com"))
+console.log(validarEmail.test("teste@email"))
+
 function dataInput(){
 
     const data = new Date();
