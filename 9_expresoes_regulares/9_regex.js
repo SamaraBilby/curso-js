@@ -127,8 +127,18 @@ console.log(validaDominio.test("www.google"))
 let validarEmail = /\w+@\w+\.\w+/;
 
 console.log(validarEmail.test("teste@email.com"));
-console.log(validarEmail.test("@email.com"))
-console.log(validarEmail.test("teste@email"))
+console.log(validarEmail.test("@email.com"));
+console.log(validarEmail.test("teste@email"));
+console.log(validarEmail.test("testeemail.com"));
+
+// Validando data
+
+let validarData = /[0-9]{2}[/][0-9]{2}[/][0-9]{4}/;
+
+console.log(validarData.test("07/07/1989"));
+console.log(validarData.test("07/7/1989"));
+console.log(validarData.test("07/07/89"));
+console.log(validarData.test("7/07/1989"));
 
 function dataInput(){
 
