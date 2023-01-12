@@ -68,3 +68,40 @@ async function somar(a,b){
 somar(2,2).then(function(value){
     console.log(value);
 });
+
+// await
+
+function somaComDelay(a,b){
+    return new Promise(resolve => {
+        setTimeout(function(){
+            resolve(a + b);
+        }, 2000)
+    });
+}
+
+async function resSoma(a, b, c, d){
+    let x = somaComDelay(a,b);
+    let y = somaComDelay(c,d)
+
+    return await x + await y;
+}
+
+console.log(resSoma(1,2,3,4).then(value => console.log(value)))
+
+
+// Generators
+
+function* genTest(){
+    let id = 0;
+    while(true){
+        yield id++;
+    }
+}
+
+let criarId = genTest();
+
+console.log(criarId.next().value)
+console.log(criarId.next().value)
+console.log(criarId.next().value)
+console.log(criarId.next().value)
+
