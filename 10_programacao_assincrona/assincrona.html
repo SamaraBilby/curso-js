@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assincrona.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2> Callbacks</h2>
+    
+    <ul>
+        <li>Callback é uma função que faz uma ação após algum acontencimento no código</li>
+        <li>Podemos realizar um callback com a função setTimeout</li>
+    </ul>
+
+    <h2>Promises</h2>
+    
+    <ul>
+        <li>São ações assíncronas que podem produzir um valor algum momento no código</li>
+        <li>Uma forma de dizer a linguagem que um valor pode estar presente em um futuro do código</li>
+        <li>O objeto das promises é Promise, resolve é o método que resolve uma Promise, o then é o que faz ela poder ser executada em um ponto futuro</li>
+    </ul>
+
+    <h2>Falha nas Promises</h2>
+    <ul>
+        <li>Uma Promise pode falhar, podemos reter esse erro com um método chamado catch;</li>
+        <li>Com ele podemos exibir erro no console, por exemplo, e fazer o debug no código;</li>
+    </ul>
+
+    <h2>Rejeitando Promises</h2>
+    <ul>
+        <li>Além do resolve, há o método reject</li>
+        <li>Que é quando determinada lógica não satisfa nosso pragrama, então podemos ir para outra com o reject, em vez do resolve</li>
+        <li>Resolve e reject terminam a Promise, ou seja, não podemos chamar mais o then.</li>
+    </ul>
+
+    <h2>Resolvendo várias Promises</h2>
+
+    <ul>
+        <li>Com o método all, podemos resolver várias promessas de uma vez só</li>
+        <li>Ou seja passamos elas pelo array e quando a última for resolvida, receberemos a resposta;</li> 
+    </ul>
+
+    <h2>Async Functions</h2>
+    <ul>
+        <li>Podemos criar funções assíncronas com a palavra reservada async;</li>
+        <li>Elas retornam um Promise;</li>
+        <li>Se retornar algo, a promessa é resolvida,se der alguma exception a promessa é rejeitada;</li>
+    </ul>
+</body>
+</html>
