@@ -22,3 +22,17 @@ console.log(document.getElementsByClassName("lista"));
 
 console.log(document.querySelector("ul.lista li"));
 console.log(document.querySelector("#algum_id"));
+
+// alterando HTML com insertBefore
+
+let add_el = document.createElement("h1");
+
+let el = document.querySelector("h2")
+let pai = el.parentNode;
+
+let texto = document.createTextNode("DOOOOOMMMMM");
+
+add_el.appendChild(texto);
+pai.insertBefore(add_el, el)
+console.log(document.getElementsByTagName("h1"));
+
