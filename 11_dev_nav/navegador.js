@@ -36,3 +36,11 @@ add_el.appendChild(texto);
 pai.insertBefore(add_el, el)
 console.log(document.getElementsByTagName("h1"));
 
+// alterando a Dom com appendChild 
+
+let p = document.createElement("p");
+let el_2 = document.querySelector("h1")
+let pai_2 = el_2.parentNode;
+
+pai_2.appendChild(p)
+console.log(document.getElementsByTagName("p"));
