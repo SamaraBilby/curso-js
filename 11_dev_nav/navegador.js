@@ -44,3 +44,18 @@ let pai_2 = el_2.parentNode;
 
 pai_2.appendChild(p)
 console.log(document.getElementsByTagName("p"));
+
+
+// alterando DOM replaceChild
+
+let novoElemento = document.createElement("p");
+
+let text0 = document.createTextNode("Protocolos");
+
+novoElemento.appendChild(text0);
+
+let heading = document.querySelector("#algum_id"); 
+
+let paiHeading = heading.parentNode;
+
+paiHeading.replaceChild(novoElemento, heading)
