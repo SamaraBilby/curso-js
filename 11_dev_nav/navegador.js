@@ -66,3 +66,18 @@ let texto_1 = document.createTextNode(" Este é o texto");
 let p_1 = document.getElementById("outro_id");
 
 p_1.appendChild(texto_1);
+
+// criando elementos 
+
+let listaElemento = document.createElement("ul");
+
+for( i = 0; i < 5; i++){
+    let item = document.createElement("li");
+    let texto = document.createTextNode("texto lista" + i);
+    item.appendChild(texto);
+    listaElemento.appendChild(item);
+}
+
+let container = document.getElementById("container-principal")
+
+container.appendChild(listaElemento)
