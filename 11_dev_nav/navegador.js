@@ -59,3 +59,10 @@ let heading = document.querySelector("#algum_id");
 let paiHeading = heading.parentNode;
 
 paiHeading.replaceChild(novoElemento, heading)
+
+// Criando nós de texto
+
+let texto_1 = document.createTextNode(" Este é o texto");
+let p_1 = document.getElementById("outro_id");
+
+p_1.appendChild(texto_1);
