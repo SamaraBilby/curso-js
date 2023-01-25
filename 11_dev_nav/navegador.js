@@ -80,4 +80,14 @@ for( i = 0; i < 5; i++){
 
 let container = document.getElementById("container-principal")
 
-container.appendChild(listaElemento)
+container.appendChild(listaElemento);
+
+
+// Modificando e lendo atributos
+
+let url = document.getElementById('link');
+console.log(url.getAttribute('href'));
+
+url.setAttribute("href","https://www.joiasvip.com.br/")
+url.setAttribute("target","_blank")
+console.log(url.getAttribute('href'));
