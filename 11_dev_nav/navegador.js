@@ -107,3 +107,8 @@ console.log(container.getBoundingClientRect())
 let el_Css = document.getElementById("elemento_css");
 console.log(el_Css.style)
 el_Css.style.backgroundColor = "red";
+
+let todosH2 = document.querySelectorAll('h2');
+console.log(todosH2);
+
+console.log(count(todosH2));
