@@ -91,3 +91,19 @@ console.log(url.getAttribute('href'));
 url.setAttribute("href","https://www.joiasvip.com.br/")
 url.setAttribute("target","_blank")
 console.log(url.getAttribute('href'));
+
+// Verificando altura e largura do elemento
+
+console.log(container.offsetWidth);
+console.log(container.offsetHeight);
+
+console.log(container.clientWidth) // desconsidera bordas
+console.log(container.clientHeight) // desconsidera bordas
+
+// Posição do elemento na tela
+
+console.log(container.getBoundingClientRect())
+
+let el_Css = document.getElementById("elemento_css");
+console.log(el_Css.style)
+el_Css.style.backgroundColor = "red";
