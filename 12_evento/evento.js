@@ -34,3 +34,11 @@ eventoDefault.addEventListener("click",(e)=>{
     e.preventDefault();
     console.log("Não será redirecionado");
 })
+
+//Eventos de tecla(Key event)
+
+window.addEventListener("keydown", function(e){
+    if(e.key == "v"){
+        console.log("Apertou a letra v");
+    }
+});
