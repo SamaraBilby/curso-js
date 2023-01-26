@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>O objeto do evento</h2>
+    <ul>
+        <li>Quando criamos eventos, temos a opção de utilizar um argumento opcional, que é chamdao de objeto do evento</li>
+        <li>Ele contém propriedades que podem ser utilizadas a nosso favor</li>
+        <li>O objeto é criado pelo JS automaticamente</li>
+        <p>function msg(e){ <br> console.log(e); <br>} <br> btn.addEventListener("click", msg); <br></p>
+    </ul>
+    <button type="submit" id="btnSend">Enviar</button>
+    <button type="submit" id="btnRemove">Remover</button>
+
+    <h2>Propagação</h2>
+
+    <ul>
+        <li>Quando não definimos um elemento muito bem(seletor brando) ou um elemento que está dentro de outro tem um evento, pode acontecer a Propagação, ou seja, o outro elemento ativar um evento também, aí teremos uma duplicação;</li>
+        <li>Para isso temo um método que para esta Propagação e resolve este problema, o <strong>StopPropagation</strong>;</li>
+        
+
+    </ul>
+
+    <p class="propagacao">
+        Pode clicar aqui
+        <br>
+        <button class="botao">Propagação</button>
+    </p>
+    <script src="./evento.js"></script>
+</body>
+</html>

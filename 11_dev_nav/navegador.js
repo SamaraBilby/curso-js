@@ -110,5 +110,3 @@ el_Css.style.backgroundColor = "red";
 
 let todosH2 = document.querySelectorAll('h2');
 console.log(todosH2);
-
-console.log(count(todosH2));
