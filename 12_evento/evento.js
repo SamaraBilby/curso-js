@@ -80,4 +80,16 @@ inputFoco.addEventListener("focus", function(){
 
 inputFoco.addEventListener("blur", function(){
     console.log("Perdeu no input");
-})
+});
+
+// evento de carregamento
+
+window.addEventListener("load", (e)=>{
+   alert("não se vá");
+});
+
+//debounce
+
+window.addEventListener("mousemove", function(){
+    timeout = this.setTimeout(() => console.log("Debounce!"), 500)
+});
