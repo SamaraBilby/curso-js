@@ -63,3 +63,21 @@ window.addEventListener("mousemove", function(e){
     console.log("Mouse na posição X:"+ e.x);
     console.log("Mouse na posição Y:" + e.y);
 })
+
+window.addEventListener("scroll", (e)=> {
+    if(window.pageYOffset > 100){
+        console.log("Chegou na posição")
+    };
+});
+
+// Eventos por foco
+
+let inputFoco = document.querySelector("input");
+
+inputFoco.addEventListener("focus", function(){
+    console.log("Foco no input");
+});
+
+inputFoco.addEventListener("blur", function(){
+    console.log("Perdeu no input");
+})
