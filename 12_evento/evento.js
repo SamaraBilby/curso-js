@@ -48,7 +48,7 @@ window.addEventListener("keyup", function(e){
         console.log("Apertou o ENTER");
     }
 });
-
+// Evento mouse
 let mouse_event = document.querySelector("button.mouse_evento");
 
 function doubleClick(e){
@@ -57,4 +57,9 @@ function doubleClick(e){
 
 mouse_event.addEventListener("dblclick", doubleClick);
 
+// Movimento mouse
 
+window.addEventListener("mousemove", function(e){
+    console.log("Mouse na posição X:"+ e.x);
+    console.log("Mouse na posição Y:" + e.y);
+})
