@@ -42,3 +42,19 @@ window.addEventListener("keydown", function(e){
         console.log("Apertou a letra v");
     }
 });
+
+window.addEventListener("keyup", function(e){
+    if(e.key == "Enter"){
+        console.log("Apertou o ENTER");
+    }
+});
+
+let mouse_event = document.querySelector("button.mouse_evento");
+
+function doubleClick(e){
+    console.log("Ativou o double click");
+};
+
+mouse_event.addEventListener("dblclick", doubleClick);
+
+
