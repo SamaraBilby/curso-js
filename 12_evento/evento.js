@@ -25,3 +25,12 @@ botaoPropagacao.addEventListener("click", function(e){
     console.log("click 2");
     e.stopPropagation();
 });
+
+// prevent default
+
+let eventoDefault = document.querySelector("a");
+
+eventoDefault.addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log("Não será redirecionado");
+})
